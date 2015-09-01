@@ -29,3 +29,5 @@ To watch some training videos, visit http://www.youtube.com/user/c9ide
 
 Made with my mentor at [Bloc](http://bloc.io).
 
+Basic Rails App
+
