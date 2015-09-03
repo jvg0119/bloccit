@@ -31,4 +31,35 @@ section {
  */
  
  
+ .social-btn {
+     position: absolute;
+     width: 150px;
+     text-align: center;
+     height: 50px;
+     background: gold;
+     border-radius: 5px;
+     border: 10px;
+     border-color: black;
+     border-style: solid;
+     padding: 10px;
+     margin: 10px;
+ }
  
+
+/*
+.social-btn {
+    position: absolute;
+    top: 0px;
+    left: 600px;
+    height: 30px;
+    width: 120px;
+    background: LightSkyBlue;
+    border: 20px;
+    color: Black;
+    font: 18px bold sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+*/
