@@ -57,3 +57,5 @@ group :development, :test do
   gem 'spring'
 end
 
+#added
+gem 'pry-rails', :group => :development
