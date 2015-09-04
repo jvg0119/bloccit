@@ -59,3 +59,5 @@ end
 
 #added
 gem 'pry-rails', :group => :development
+
+gem 'faker'
