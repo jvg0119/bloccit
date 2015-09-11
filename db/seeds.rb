@@ -17,6 +17,18 @@ posts = Post.all
         )
 end
 
+# assignment 32 seed data 
+Post.find_or_create_by!(
+ 	title: "Sample post title",
+ 	body: "This is my sample post body"
+ 	)
+
+ Comment.find_or_create_by!(
+ 	post: posts.sample, 
+ 	body: "This is my sample comment body"
+ 	)
+
+
 
 puts "Seed finished"
 puts "#{Post.count} posts created"
