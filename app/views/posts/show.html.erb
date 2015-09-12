@@ -4,5 +4,8 @@
 <!--<%= params %>-->
 
 <h1><%= @post.title %></h1>
+
+<%= link_to "Edit", edit_post_path(@post), class: 'btn btn-success' %>
+
 <p><%= @post.body %></p>
 <!--<p><%= @post.id %></p>-->
