@@ -1,11 +1,21 @@
 Rails.application.routes.draw do
 
+ # get 'questions/index'
+ # get 'questions/show'
+ # get 'questions/new'
+ # get 'questions/create'
+ # get 'questions/edit'
+ # get 'questions/update'
+
  # get 'posts/index'
  # get 'posts/show'
  # get 'posts/new'
  # get 'posts/edit'
-
+ 
+ 
+  
  resources :posts
+ resources :questions
 
  # get 'welcome/index'
  # get 'welcome/about'

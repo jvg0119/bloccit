@@ -12,7 +12,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(params.require(:post).permit(:title, :body))
+    @Post.new(params.require(:post).permit(:title, :body))
       # raise # this will short-circuit the method
       if @post.save
         flash[:notice] = "Post was saved."
@@ -24,7 +24,7 @@ class PostsController < ApplicationController
     end
 
   def edit
-    @post = Post.find(params[:id])
+    @posts = Post.find(params[:id])
   end
 
 
