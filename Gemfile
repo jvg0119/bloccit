@@ -62,3 +62,4 @@ gem 'pry-rails', :group => :development
 
 gem 'faker'
 gem 'devise'
+gem 'figaro', '1.0'
