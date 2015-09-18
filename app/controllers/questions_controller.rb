@@ -41,8 +41,12 @@ def update
 
 def destroy
   @question = Question.find(params[:id])
-  @question.destroy
+  if @question.destroy
   redirect_to questions_path, :notice => "Your question has been deleted"
+else
+  flash[:error] = "There was a problem saving the question. Please try again."
+  render :show
+end
 end
 
 end
