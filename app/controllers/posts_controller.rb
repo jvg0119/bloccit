@@ -14,6 +14,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(params.require(:post).permit(:title, :body))
       # raise # this will short-circuit the method
+      @post.user = current_user
       if @post.save
         flash[:notice] = "Post was saved."
         redirect_to @post
