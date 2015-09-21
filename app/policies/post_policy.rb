@@ -4,6 +4,8 @@ class PostPolicy < ApplicationPolicy
 		true
 	end
 
+
+# assignment 29 authorization
 	class Scope < Scope
 		attr_reader :user, :scope
 
@@ -14,12 +16,13 @@ class PostPolicy < ApplicationPolicy
 
 		def resolve
 	    	if user.admin? || user.moderator?
-	        	scope.where(user: user)
-	        	#scope.all
+	        	scope.all
 	    	else
-	        	#scope.where(user: user)
-	        	#scope.where(account_id: user.account_id)
+	        	scope.where(user: user)
 	     	end
 		end
 	end
+
+
+
 end
