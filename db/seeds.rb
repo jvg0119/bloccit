@@ -42,12 +42,12 @@ posts = Post.all
         )
 end
 
-user = User.first
-user.skip_reconfirmation!
-user.update_attributes!(
-	email: 'joe@yahoo.com',
-	password: 'helloworld'
-	)
+#user = User.first
+#user.skip_reconfirmation!
+#user.update_attributes!(
+#	email: 'joe@yahoo.com',
+#	password: 'helloworld'
+#	)
 
 
 # Create an admin user
