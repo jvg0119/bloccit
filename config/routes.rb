@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
 
+  #get 'topics/index'
+  #get 'topics/new'
+  #get 'topics/show'
+  #get 'topics/edit'
+
   devise_for :users
  # get 'posts/index'
  # get 'posts/show'
@@ -7,6 +12,7 @@ Rails.application.routes.draw do
  # get 'posts/edit'
 
  resources :posts
+ resources :topics
 
  # get 'welcome/index'
  # get 'welcome/about'
