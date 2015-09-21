@@ -42,6 +42,8 @@ class ApplicationPolicy
     record.class
   end
 
+
+# maybe not included
   class Scope
     attr_reader :user, :scope
 
@@ -50,8 +52,8 @@ class ApplicationPolicy
       @scope = scope
     end
 
-    def resolve
-      scope
-    end
+    #def resolve
+     # scope
+    #end
   end
 end
