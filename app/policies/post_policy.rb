@@ -5,7 +5,7 @@ class PostPolicy < ApplicationPolicy
 	end
 
 
-# assignment 29 authorization
+# assignment 39 authorization
 	class Scope < Scope
 		attr_reader :user, :scope
 

@@ -44,24 +44,20 @@ class ApplicationPolicy
 
 
 
-# assignment 29 authorization
- class Scope
-   attr_reader :user, :scope
+# assignment 39 authorization
+class Scope
+ #  attr_reader :user, :scope
 
-    def initialize(user, scope)
-      @user = user
-      @scope = scope
-    end
+  #  def initialize(user, scope)
+   #   @user = user
+    #  @scope = scope
+   # end
 
-  def resolve
+ def resolve
     scope
   end
   
-  end
-
-
-
-
+end  
 
 
 end
