@@ -24,7 +24,7 @@ require 'faker'
 # create topics
 15.times do
   Topic.create!(
-    name:         Faker::Lorem.senstence,
+    name:         Faker::Lorem.sentence,
     description:  Faker::Lorem.paragraph
     )
 end
@@ -38,9 +38,9 @@ topics = Topic.all
 # Create Posts
 50.times do
     Post.create!(
-    	user: users.sample,
-        title: Faker::Lorem.sentence,
+    	  user: users.sample,
         topic: topics.sample,
+        title: Faker::Lorem.sentence,
         body: Faker::Lorem.paragraph
         )
 end
