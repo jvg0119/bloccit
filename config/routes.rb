@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  # get 'summaries/show'
+  # get 'summaries/new'
+  # get 'summaries/create'
+
   #get 'topics/index'
   #get 'topics/new'
   #get 'topics/show'
@@ -15,9 +19,10 @@ Rails.application.routes.draw do
  # resources :topics
 
   resources :topics do
-    resources :posts, except: [:index]
+    resources :posts, except: [:index] do
+      resources :summaries, only: [:show, :new, :create]
   end
-
+end
 
  # get 'welcome/index'
  # get 'welcome/about'

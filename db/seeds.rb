@@ -20,6 +20,14 @@ require 'faker'
  
  # The `save` method then saves this User to the database.
 
+# Create summaries
+5.times do
+  Summary.create!(
+    context: Faker::Lorem.sentence
+    )
+end
+
+
 
 # create topics
 15.times do
@@ -29,11 +37,6 @@ require 'faker'
     )
 end
 topics = Topic.all
-
-
-
-
-
 
 # Create Posts
 50.times do
@@ -96,6 +99,7 @@ end
 
 
 puts "Seed finished"
+puts "#{Summary.count} summaries created"
 puts "#{User.count} users created"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
