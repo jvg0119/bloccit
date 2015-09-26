@@ -1,4 +1,12 @@
 <h1><%= @post.title %></h1>
+<p class="lead">
+	<% if !@post.summary.nil? %>
+		Summary: <%=	@post.summary.context %> <span><%= link_to "Edit Summary", edit_topic_post_summary_path(@post.topic, @post, @post.summary), class: 'btn-xs btn-success' %></span>
+
+	<% else %>
+		<%= link_to "New Summary", new_topic_post_summary_path(@post.topic, @post) %>
+	<% end %>
+</p>
 
 <div class="row">
   <div class="col-md-8">

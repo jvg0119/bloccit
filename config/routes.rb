@@ -20,7 +20,7 @@ Rails.application.routes.draw do
 
   resources :topics do
     resources :posts, except: [:index] do
-      resources :summaries, only: [:show, :new, :create]
+      resources :summaries
   end
 end
 
