@@ -21,8 +21,8 @@ require 'faker'
  # The `save` method then saves this User to the database.
 
 
-# create topics
-15.times do
+# create topics  original was 15
+300.times do
   Topic.create!(
     name:         Faker::Lorem.sentence,
     description:  Faker::Lorem.paragraph
@@ -35,8 +35,8 @@ topics = Topic.all
 
 
 
-# Create Posts
-50.times do
+# Create Posts    original 50
+20000.times do
     Post.create!(
     	  user: users.sample,
         topic: topics.sample,
@@ -97,6 +97,7 @@ end
 
 puts "Seed finished"
 puts "#{User.count} users created"
+puts "#{Topic.count} topics created"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
 
